@@ -357,6 +357,8 @@ class App extends React.Component<any, any> {
   };
 
   public testSignMessage = async () => {
+    console.log("発火");
+    console.log(this.state);
     const { connector, address, chainId } = this.state;
 
     if (!connector) {
